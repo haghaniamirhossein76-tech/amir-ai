@@ -1,1 +1,54 @@
-
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amir AI</title>
+<style>
+body {
+  background: #160d29;
+  color: white;
+  font-family: Tahoma, sans-serif;
+  text-align: center;
+  padding: 30px 15px;
+}
+h1 { color: #e8c56b; }
+.box {
+  background: #2b1b43;
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 500px;
+  margin: 30px auto;
+}
+input {
+  width: 65%;
+  padding: 12px;
+  border-radius: 10px;
+}
+button {
+  padding: 12px;
+  background: #e8c56b;
+  border: none;
+  border-radius: 10px;
+}
+</style>
+</head>
+<body>
+<h1>✦ Amir AI ✦</h1>
+<p>دستیار هوشمند اختصاصی امیر</p>
+<div class="box">
+<h3>سلام امیر! 🤖</h3>
+<p>من دستیار هوشمند تو هستم.</p>
+<input id="msg" placeholder="پیامت رو بنویس">
+<button onclick="send()">ارسال</button>
+<p id="answer"></p>
+</div>
+<script>
+function send() {
+let m = document.getElementById('msg').value;
+document.getElementById('answer').innerText =
+'پیامت دریافت شد: ' + m;
+}
+</script>
+</body>
+</html>
